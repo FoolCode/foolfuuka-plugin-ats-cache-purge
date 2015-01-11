@@ -1,0 +1,28 @@
+{
+  "name": "foolz/foolfuuka-plugin-ats-cache-purge",
+  "type": "foolz-foolfuuka-plugin",
+  "description": "This plugin purges an object from the ATS Cache when the image file is deleted from the server.",
+  "version": "1.0.0",
+  "keywords": ["apache traffic server", "cache", "purge"],
+  "homepage": "http://www.foolz.us",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "foolz",
+      "email": "support@foolz.us"
+      }
+  ],
+  "support": {
+    "email": "support@foolz.us",
+    "irc": "irc://irc.irchighway.net/fooldriver"
+  },
+  "require" : {
+    "foolz/plugin": "dev"
+  },
+  "extra": {
+    "name": "ATS Cache Purge",
+    "slug": "ats_cache_purge",
+    "identifier": "fu",
+    "module": "foolfuuka"
+  }
+}
