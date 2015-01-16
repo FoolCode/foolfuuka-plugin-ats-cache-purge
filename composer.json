@@ -1,7 +1,7 @@
 {
   "name": "foolz/foolfuuka-plugin-ats-cache-purge",
   "type": "foolz-foolfuuka-plugin",
-  "description": "This plugin purges an object from the ATS Cache when the image file is deleted from the server.",
+  "description": "Purges content from the Apache Traffic Server cache when media content is deleted.",
   "version": "1.0.0",
   "keywords": ["apache traffic server", "cache", "purge"],
   "homepage": "http://www.foolz.us",
