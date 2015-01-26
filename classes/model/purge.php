@@ -1,11 +1,11 @@
 <?php
 
-namespace Foolz\Foolfuuka\Plugins\ATSCachePurge\Model;
+namespace Foolz\FoolFuuka\Plugins\ATSCachePurge\Model;
 
-use Foolz\Foolframe\Model\Context;
-use Foolz\Foolframe\Model\Model;
-use Foolz\Foolframe\Model\Preferences;
-use Foolz\Foolfuuka\Model\Media;
+use Foolz\FoolFrame\Model\Context;
+use Foolz\FoolFrame\Model\Model;
+use Foolz\FoolFrame\Model\Preferences;
+use Foolz\FoolFuuka\Model\Media;
 
 class ATSCachePurge extends Model
 {
@@ -30,7 +30,7 @@ class ATSCachePurge extends Model
         // purge full image
         try {
             $file['full'] = $post->getDir(false, true, true);
-        } catch (\Foolz\Foolfuuka\Model\MediaException $e) {
+        } catch (\Foolz\FoolFuuka\Model\MediaException $e) {
 
         }
 
@@ -38,14 +38,14 @@ class ATSCachePurge extends Model
         try {
             $post->op = 0;
             $file['thumb-0'] = $post->getDir(true, true, true);
-        } catch (\Foolz\Foolfuuka\Model\MediaException $e) {
+        } catch (\Foolz\FoolFuuka\Model\MediaException $e) {
 
         }
 
         try {
             $post->op = 1;
             $file['thumb-1'] = $post->getDir(true, true, true);
-        } catch (\Foolz\Foolfuuka\Model\MediaException $e) {
+        } catch (\Foolz\FoolFuuka\Model\MediaException $e) {
 
         }
 
